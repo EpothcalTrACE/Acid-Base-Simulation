@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.36a85cf6.css",
-    "main.js": "/static/js/main.c5970c4d.js",
-    "index.html": "/index.html",
-    "main.36a85cf6.css.map": "/static/css/main.36a85cf6.css.map",
-    "main.c5970c4d.js.map": "/static/js/main.c5970c4d.js.map"
+    "main.css": "/acid-base-simulation/static/css/main.36a85cf6.css",
+    "main.js": "/acid-base-simulation/static/js/main.c5970c4d.js",
+    "index.html": "/acid-base-simulation/index.html",
+    "main.36a85cf6.css.map": "/acid-base-simulation/static/css/main.36a85cf6.css.map",
+    "main.c5970c4d.js.map": "/acid-base-simulation/static/js/main.c5970c4d.js.map"
   },
   "entrypoints": [
     "static/css/main.36a85cf6.css",
