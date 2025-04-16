@@ -1,7 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import authRoutes from './backend/routes/auth.js';
-import simulationRoutes from './backend/routes/simulation.js';
+import simulationRoutes from './backend/routes/Simulation.js';
 import userRoutes from './backend/routes/user.js';
 import errorHandler from './backend/middleware/errorHandler.js';
 import { connectDB } from './backend/config/db.js';
