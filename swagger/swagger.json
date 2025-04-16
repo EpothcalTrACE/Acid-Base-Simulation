@@ -1,0 +1,116 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Acid-Base Simulation API",
+      "description": "API documentation for the Acid-Base Simulation project",
+      "version": "1.0.0"
+    },
+    "servers": [
+      {
+        "url": "http://localhost:5000",
+        "description": "Local development server"
+      }
+    ],
+    "paths": {
+      "/api/auth/login": {
+        "post": {
+          "summary": "Login user",
+          "tags": ["Auth"],
+          "requestBody": {
+            "description": "User credentials",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "email": {
+                      "type": "string",
+                      "example": "user@example.com"
+                    },
+                    "password": {
+                      "type": "string",
+                      "example": "securePassword123"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Successful login"
+            },
+            "401": {
+              "description": "Invalid credentials"
+            }
+          }
+        }
+      },
+      "/api/users": {
+        "get": {
+          "summary": "Get all users",
+          "tags": ["Users"],
+          "responses": {
+            "200": {
+              "description": "List of users"
+            }
+          }
+        }
+      },
+      "/api/simulations": {
+        "post": {
+          "summary": "Run acid-base simulation",
+          "tags": ["Simulations"],
+          "requestBody": {
+            "description": "Simulation input parameters",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "acidConcentration": {
+                      "type": "number",
+                      "example": 0.1
+                    },
+                    "baseConcentration": {
+                      "type": "number",
+                      "example": 0.1
+                    },
+                    "ka": {
+                      "type": "number",
+                      "example": 1.8e-5
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Simulation results"
+            },
+            "400": {
+              "description": "Invalid input"
+            }
+          }
+        }
+      }
+    },
+    "tags": [
+      {
+        "name": "Auth",
+        "description": "User authentication routes"
+      },
+      {
+        "name": "Users",
+        "description": "User-related routes"
+      },
+      {
+        "name": "Simulations",
+        "description": "Simulation processing routes"
+      }
+    ]
+  }
+  
