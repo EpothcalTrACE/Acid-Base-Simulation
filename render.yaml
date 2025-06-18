@@ -11,7 +11,7 @@ services:
       - key: NODE_ENV
         value: production
 
-  - type: static
+  - type: web
     name: acid-base-frontend
     buildCommand: yarn install && yarn build
     staticPublishPath: build
