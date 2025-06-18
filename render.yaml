@@ -12,6 +12,7 @@ services:
         value: production
 
   - type: web
+    env: static
     name: acid-base-frontend
     buildCommand: yarn install && yarn build
     staticPublishPath: build
