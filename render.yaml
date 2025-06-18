@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: acid-base-backend
+    env: node
+    plan: free
+    buildCommand: yarn install
+    startCommand: yarn start
+    envVars:
+      - key: MONGO_URI
+        value: <your-mongodb-uri>
+      - key: NODE_ENV
+        value: production
+
+  - type: static
+    name: acid-base-frontend
+    buildCommand: yarn install && yarn build
+    staticPublishPath: build
