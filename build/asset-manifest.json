@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/acid-base-simulation/static/js/main.4a131ffe.js",
-    "index.html": "/acid-base-simulation/index.html",
-    "main.4a131ffe.js.map": "/acid-base-simulation/static/js/main.4a131ffe.js.map"
+    "main.js": "/Acid-Base-Simulator/static/js/main.49b40fca.js",
+    "index.html": "/Acid-Base-Simulator/index.html",
+    "main.49b40fca.js.map": "/Acid-Base-Simulator/static/js/main.49b40fca.js.map"
   },
   "entrypoints": [
-    "static/js/main.4a131ffe.js"
+    "static/js/main.49b40fca.js"
   ]
 }

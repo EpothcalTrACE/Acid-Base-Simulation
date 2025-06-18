@@ -1,10 +1,11 @@
 // app.js or index.js
-import express from 'express';
-import mongoose from 'mongoose';
-import cors from 'cors';
-import simulationRoutes from '../backend/routes/Simulation.js';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.js';
 
-const app = express();
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
 
 // Middleware
 app.use(cors());

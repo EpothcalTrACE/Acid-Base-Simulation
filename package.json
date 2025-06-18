@@ -4,7 +4,7 @@
   "description": "Acid-Base Simulation Backend",
   "main": "./backend/server.js",
   "type": "module",
-  "homepage":"https://EpothcalTrACE.github.io/acid-base-simulation",
+  "homepage": "https://EpothcalTrACE.github.io/Acid-Base-Simulator/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
